@@ -1,0 +1,6 @@
+{
+  "app.header" : "Lien numéro 1" ,
+  "app.content" : "Apprenez à réagir" ,
+  "app.channel.plug": "Texte de test avec <strong>{variable}</strong>",
+  "app.placeholder" : "ps'il vous plaît écrivez votre nom"
+}

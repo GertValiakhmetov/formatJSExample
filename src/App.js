@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import "./App.css"
+import { IntlProvider } from 'react-intl';
+import English from "./lang/en.json";
+import French from "./lang/fr.json";
+import Russian from "./lang/ru.json";
+import BlablaComponent from "./BlablaComponent";
+
+
+// IntlProvider - создает контекст и прокидывает user's current locale и словари
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
+    const [locale, setLocale] = useState("en");
+    const dictionary = {en: English, fr: French, ru: Russian}
+
+    return (
+        <div className="App">
+            <IntlProvider locale={locale} messages={dictionary[locale]}>
+                <BlablaComponent setLocale = {setLocale} />
+            </IntlProvider>
+        </div>
+    );
+}
 export default App;
+

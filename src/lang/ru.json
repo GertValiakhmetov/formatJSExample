@@ -1,0 +1,6 @@
+{
+  "app.header" : "Ссылка номер 1" ,
+  "app.content" : "Изучаем реакт" ,
+  "app.channel.plug": "Тестовый текст c <strong>{variable}</strong>",
+  "app.placeholder" : "плиз врайт нейм"
+}

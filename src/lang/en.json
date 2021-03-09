@@ -1,0 +1,7 @@
+{
+  "app.header" : "Link number 1" ,
+  "app.content" : "Learn React" ,
+  "app.channel.plug": "Test text with <strong>{variable}</strong>",
+  "app.placeholder" : "please write name"
+
+}
